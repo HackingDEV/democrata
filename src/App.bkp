@@ -1,0 +1,44 @@
+import ImgDemo from './assets/democrata.png'
+
+function App() {
+  return (
+    <div className="container">
+      <div className="container-login">
+        <div className="wrap-login">
+          <form className="login-form">
+
+            <spam className="login-form-title">Bem Vindo!</spam>
+
+            <spam className="login-form-title">
+              <img src={ImgDemo} alt=""/>
+            </spam>
+
+            <div className="wrap-input">
+              <input type="email" />
+              <spam className="focus-input" data-placeroder="Email"></spam>
+            </div>
+
+            <div className="wrap-input">
+              <input type="senha" />
+              <spam className="focus-input" data-placeroder="Senha"></spam>
+            </div>
+
+            <div className="container-login-form-btn">
+              <button className="login-form-btn">Login</button>
+            </div>
+
+            <div className='text-conter'>
+              <spam className="txt1">Não possui conta?</spam>
+              
+              <a className='txt2' href='#'>Criar conta.</a>
+            </div>
+
+          </form>
+        </div>
+      </div> 
+    </div>
+    
+  );
+}
+
+export default App;
